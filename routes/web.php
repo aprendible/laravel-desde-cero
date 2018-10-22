@@ -1,14 +1,14 @@
 <?php
 
-Route::get('contactame', function(){
-	return "Sección de contactos";
-})->name('contactos');
+Route::view('/', 'home')->name('home');
+Route::view('/about', 'about')->name('about');
+Route::view('/portfolio', 'portfolio')->name('portfolio');
+Route::view('/contact', 'contact')->name('contact');
 
-Route::get('/', function(){
-	echo "<a href='" . route('contactos') . "'>Contactos 1</a><br>";
-	echo "<a href='" . route('contactos') . "'>Contactos 2</a><br>";
-	echo "<a href='" . route('contactos') . "'>Contactos 3</a><br>";
-	echo "<a href='" . route('contactos') . "'>Contactos 4</a><br>";
-	echo "<a href='" . route('contactos') . "'>Contactos 5</a><br>";
-});
+// Route::view('/', 'home')->name('home'); // Politicas de privacidad, terminos y condiciones
 
+// Route::get('/', function(){
+// 	$nombre = "Jorge";
+
+// 	return view('home', compact('nombre')); // ['nombre' => $nombre]
+// })->name('home');
