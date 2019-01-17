@@ -3,7 +3,7 @@
 @section('title', 'Portfolio')
 
 @section('content')
-    <h1>Portfolio</h1>
+    <h1>@lang('Portfolio')</h1>
     <ul>
         @forelse($portfolio as $portfolioItem)
             <li>{{ $portfolioItem['title'] }}</li>

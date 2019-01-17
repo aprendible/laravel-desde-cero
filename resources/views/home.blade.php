@@ -3,5 +3,5 @@
 @section('title', 'Home')
 
 @section('content')
-    <h1>Home</h1>
+    <h1>@lang('Home')</h1>
 @endsection
