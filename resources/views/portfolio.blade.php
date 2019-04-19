@@ -5,11 +5,12 @@
 @section('content')
     <h1>@lang('Portfolio')</h1>
     <ul>
-        @forelse($portfolio as $portfolioItem)
-            <li>{{ $portfolioItem['title'] }}</li>
+        @forelse($projects as $project)
+            <li><a href="#">{{ $project->title }}</a></li>
         @empty
             <li>No hay proyectos para mostrar</li>
         @endforelse
+        {{ $projects->links() }}
     </ul>
 
 @endsection
