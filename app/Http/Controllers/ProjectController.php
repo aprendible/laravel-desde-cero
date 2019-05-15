@@ -14,10 +14,10 @@ class ProjectController extends Controller
         ]);
     }
 
-    public function show($id)
+    public function show(Project $project)
     {
         return view('projects.show', [
-            'project' => Project::findOrFail($id)
+            'project' => $project
         ]);
     }
 }

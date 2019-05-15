@@ -12,5 +12,4 @@
         @endforelse
         {{ $projects->links() }}
     </ul>
-
 @endsection
