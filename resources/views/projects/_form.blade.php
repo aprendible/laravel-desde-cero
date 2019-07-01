@@ -2,7 +2,7 @@
 
 <label>
     Título del proyecto <br>
-    <input type="text" name="title" value="{{ old('title', null) }}">
+    <input type="text" name="title" value="{{ old('title', $project->title) }}">
 </label>
 <br>
 <label>
