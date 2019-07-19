@@ -14,6 +14,7 @@ Este es un proyecto de prueba realizado en el curso **Aprende Laravel Desde Cero
         * DB_USERNAME=
         * DB_PASSWORD=
     * Define las credenciales de [Mailtrap](https://mailtrap.io/) (Opcional)
+    * Define las credenciales de [Sendgrid](https://sendgrid.com/) (Para enviar emails en producción)
 8. Ejecuta `composer install`
 9. Ejecuta `php artisan key:generate`
 10. Ejecuta `php artisan migrate`
