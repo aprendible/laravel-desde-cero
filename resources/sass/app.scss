@@ -6,3 +6,8 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.active a {
+    color: purple;
+    text-decoration: none;
+}
